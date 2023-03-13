@@ -1,0 +1,76 @@
+body{
+    background-image: url(/Users/dev/Documents/websites/wiggs_de/images/spiral.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* sets colors for entire page, use h1/h2/div/p or inline to change others*/
+body
+{
+    background-color:#ffffff;
+    color:#595959
+}
+
+ /* font sizes by heading as per pt system*/
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+h1
+{
+    font-size: 200%;
+}
+
+h2
+{
+    font-size: 150%;
+}
+
+h3
+{
+    font-size: 112.5%;
+}
+
+/*text alignment*/
+h3
+{
+    text-align:right
+}
+
+h2 {
+    text-align: center;
+}
+p
+{
+    text-align: justify;
+}
+footer{
+    text-align: center;
+}
+
+header{
+    text-align: justify;
+}
+
+/*link styles*/
+a:link {
+    color:#595959;
+    text-decoration: none;
+}
+a:visited {
+    color:#595959;
+}
+a:active{
+    color:black;
+}
+a:hover{
+    color:black;
+}
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
