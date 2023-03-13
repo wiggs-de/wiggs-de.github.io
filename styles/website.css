@@ -1,8 +1,10 @@
 /* sets colors for entire page, use h1/h2/div/p or inline to change others*/
-body
-{
-    background-color:#ffffff;
-    color:#595959
+body{
+    background-image: url(../images/spiral.png), url(../images/spiral.png), url(../images/spiral.png), url(../images/spiral.png), url(../images/spiral.png), url(../images/spiral.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150px, 50px, 200px, 125px, 85px, 130px;
+    background-position: 85% 75%, right top, 75% 45%, 93% 27%, 85% 10%, 97% 95%;
 }
 
  /* font sizes by heading as per pt system*/
@@ -87,14 +89,6 @@ header{
 	margin: 1.5em 1.5em 0.5em;
 	width: 90%;
 	max-width: 80ch;
-}
-
-.limitbig{
-  justify-content: center;
-	margin: 1.5em 1.5em 0.5em;
-	width: 90%;
-	max-width: 80ch;
-  font-size: 18px
 }
 
 .tab { margin-left: 40px; }
