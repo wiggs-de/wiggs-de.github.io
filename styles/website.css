@@ -6,6 +6,15 @@ body{
     background-size: 150px, 50px, 200px, 125px, 85px, 130px;
     background-position: 85% 75%, right top, 75% 45%, 93% 27%, 85% 10%, 97% 95%;
 }
+body{
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 450px;
+    background-position: 80% 60%;
+}
+
+/* sets colors for entire page, use h1/h2/div/p or inline to change others*/
 body
 {
     background-color:#ffffff;
@@ -34,11 +43,6 @@ h3
     font-size: 112.5%;
 }
 
-h4
-{
-  font-size: 175%;
-}
-
 /*text alignment*/
 
 h3
@@ -53,15 +57,6 @@ p
 {
     text-align: justify;
 }
-
-.centerp{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-       max-width: 50ch;
-
-}
 footer{
     text-align: center;
 }
@@ -70,41 +65,12 @@ header{
     text-align: justify;
 }
 
-
 .limit{
-	margin: 1.5em 1.5em 0.5em;
+	margin: 1.5em 1.5em 0.5em;;
 	width: 90%;
 	max-width: 60ch;
 }
 
-.limitshort{
-	margin: 1.5em 1.5em 0.5em;
-	width: 70%;
-	max-width: 45ch;
-}
-
-.limitlong{
-	margin: 1.5em 1.5em 0.5em;
-	width: 90%;
-	max-width: 100ch;
-}
-
-.limitc{
-  justify-content: center;
-	margin: 1.5em 1.5em 0.5em;
-	width: 90%;
-	max-width: 55ch;
-}
-
-.limitbig{
-  justify-content: center;
-	margin: 1.5em 1.5em 0.5em;
-	width: 90%;
-	max-width: 80ch;
-  font-size: 18px
-}
-
-.tab { margin-left: 40px; }
 
 .headlimit{
     margin: 0.5em 0.5em 0.25em;
@@ -135,60 +101,3 @@ a:active{
 a:hover{
     color:black;
 }
-
-/*columns*/
-.container {
-    overflow-x: hidden;
-
-  }
-
-  .frontpage {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1px;
-    margin: 0 -16px;
-  }
-
-  .fp-cell {
-    padding: 16px;
-  }
-
-  .fp-cell--1 {
-    grid-row: 1 / span 2;
-  }
-
-  .fp-cell--2 {
-    grid-row: 2 / span 2;
-  }
-
-  .fp-cell--3 {
-    grid-column: 2;
-  }
-
-  .fp-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-    height: 100%;
-  }
-
-  @media screen and (max-width: 750px) {
-.column {
-width: 100%;
-}
-}
-
-/*working with images*/
-img {
-    max-width: 100%;
-    height: auto;
-  } /* applies to all img, maintains aspect ratio while keeping on page*/
-
-.cv {
-    width: 25%;
-    height: auto;
-    text-align:center;
-    display:block;
-  } /*custom cv class resizes image based on screen size!*/
