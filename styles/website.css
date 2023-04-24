@@ -6,6 +6,11 @@ body{
     background-size: 150px, 50px, 200px, 125px, 85px, 130px;
     background-position: 85% 75%, right top, 75% 45%, 93% 27%, 85% 10%, 97% 95%;
 }
+body
+{
+    background-color:#ffffff;
+    color:#595959
+}
 
  /* font sizes by heading as per pt system*/
 body
@@ -88,7 +93,15 @@ header{
   justify-content: center;
 	margin: 1.5em 1.5em 0.5em;
 	width: 90%;
+	max-width: 55ch;
+}
+
+.limitbig{
+  justify-content: center;
+	margin: 1.5em 1.5em 0.5em;
+	width: 90%;
 	max-width: 80ch;
+  font-size: 18px
 }
 
 .tab { margin-left: 40px; }
@@ -160,6 +173,12 @@ a:hover{
     min-height: 200px;
     height: 100%;
   }
+
+  @media screen and (max-width: 750px) {
+.column {
+width: 100%;
+}
+}
 
 /*working with images*/
 img {
