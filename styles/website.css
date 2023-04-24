@@ -6,13 +6,6 @@ body{
     background-size: 150px, 50px, 200px, 125px, 85px, 130px;
     background-position: 85% 75%, right top, 75% 45%, 93% 27%, 85% 10%, 97% 95%;
 }
-body{
-    background-image: url(../images/about.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 450px;
-    background-position: 80% 60%;
-}
 
 /* sets colors for entire page, use h1/h2/div/p or inline to change others*/
 body
