@@ -116,11 +116,11 @@ header{
 
 /*link styles*/
 a:link {
-    color:#595959;
+    color:#blue;
     text-decoration: none;
 }
 a:visited {
-    color:#595959;
+    color:#purple;
 }
 a:active{
     color:black;
