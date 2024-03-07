@@ -12,15 +12,6 @@ body
     font-size: 16px;
 }
 
-html, body, .container {
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-}
-
 h1
 {
     font-size: 200%;
