@@ -98,6 +98,14 @@ header{
   font-size: 18px
 }
 
+
+.intgorp{
+  justify-content: center;
+	margin: 3em 1.5em 0.5em;
+	width: 90%;
+	max-width: 65%;
+}
+
 .tab { margin-left: 40px; }
 
 .headlimit{
