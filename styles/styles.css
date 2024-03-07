@@ -83,7 +83,8 @@ header{
 }
 
 .limitc{
-  justify-content: center;
+  	vertical-align: middle;
+	justify-content: center;
 	margin: 1.5em 1.5em 0.5em;
 	width: 90%;
 	max-width: 80ch;
