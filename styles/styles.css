@@ -146,69 +146,23 @@ a:hover{
     background-position: center center; /* The actual position of the background */
 }
 
-.sl-container {
-  width: 1024px;   /* You can set this to whatever you wish. 1024x768 is the
-                      size of a standard web browser window */
-  height: 768px;   /* You'll need to set a height. */
-  position: fixed;   /* Allows positioning relative to this container. */
+.sl-left{
+  position: relative;
+  top: 5%;
+  left: 5%;
+  text-align: left;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
-.sl-box {
-  position: fixed; /* Allows positioning inside the container. */
+.sl-right{
+  position: relative;
+  bottom: 10%;
+  right: 5%;
+  text-align: right;
+  padding: 3px;
+  box-sizing: border-box;
 }
-
-/* Page 1 */
-.sl-box#one { /* #one is an identifer for the box */
-  top: 7%; /* The position of the "box" where the link exists, by way of top, right, bottom, or left */
-  right: 12%;
-}
-
-/* Page 2 */
-.sl-box#two {
-  top: 30%;
-  right: -15%;
-}
-
-/* Page 3*/
-.sl-box#three {
-  bottom: 25%;
-  left: 25%;
-}
-
-/* Page 4 */
-.sl-box#four {
-  top: 22%;
-  left: 49%;
-}
-
-/* Page 5 */
-.sl-box#five {
-  bottom: 20%;
-  left: 85%;
-}
-
-.sl-box#six {
-  bottom: 35%;
-  left: 75%;
-}
-
-.sl-box#seven {
-  top: -300%;
-  left: -400%;
-}
-
-.sl-box#eight {
-  top: 150%;
-  left: -300%;
-  max-width: 20ch; /* This limits the size of the box to 20 "ch" */
-}
-
-.sl-box#nine {
-  top: 150%;
-  left: 300%;
-  max-width: 20ch; /* This limits the size of the box to 20 "ch" */
-}
-
 
 
 /* -------------------------------------------------------------------------- */
@@ -216,7 +170,7 @@ a:hover{
 
 /* About me background*/
 .bg-ab{
-    background-image: url(../images/about.jpg); /* Identifies the background image */
+    background-image: url(../images/about.png); /* Identifies the background image */
     background-repeat: no-repeat; /* Sets the image not to repeat */
     background-attachment: fixed; /* Sets the image to a fixed point system */
     background-size: 450px; /* Sizes the background image */
