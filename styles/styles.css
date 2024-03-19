@@ -1,0 +1,520 @@
+/* This project is built by:
+ * Dev Wiggers <howdy@wiggs.de>
+ * and it is version:
+ * 001
+ */
+
+/* ************************************************************************** */
+/* BASE RULES */
+/* The base rules are those that apply to all pages, think of these as a style guide */
+
+/* Body Text */
+body {
+    color: #222;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Title text */
+h1 {
+  font-size: 5rem;
+}
+
+/* Large header */
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Header */
+h3 {
+  font-size: 2rem;
+}
+
+/* Small header */
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Underline */
+u {
+  text-decoration: none;
+  border-bottom: 0.5px solid #222222;
+}
+
+/*Link styles*/
+a:link {
+    color:black;
+    text-decoration: none;
+}
+a:visited {
+    color:black;
+}
+a:active{
+    color:black;
+}
+a:hover{
+    color:red;
+}
+
+/* ************************************************************************** */
+/* LAYOUT RULES */
+
+/* Layout rules apply to shared elements, like headers, footers, or text */
+/* Home Link */
+  .hl-box {
+    z-index: 1; /* Sets this element to always be on the top of other elements */
+    position: fixed; /* The position system */
+    bottom: 5%; /* The position of the box on the page */
+    left: 5%;
+    width: 100px; /* You will need to set the width and the height to fit your
+                    text for each box */
+    height: 100px;
+    padding: 15px; /* Gives a bit of breathing room around the text */
+    text-align: left; /* This aligns the text within the box */
+    box-sizing: border-box; /* This includes the padding in the overall box size */
+  }
+
+/* Code for the home link, paste into your HTML document
+  <div class="hl-box" >
+      <h2>
+        <a href="../index.html">Home</a>
+      </h2>
+  </div>
+
+*/
+
+  /* Contact Footer */
+  .contact-box {
+  z-index: 1;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  text-align: center;
+  padding: 3px;
+  box-sizing: border-box;
+  }
+
+  /* Code for the footer link, paste into your HTML document
+
+    <div class="contact-box" >
+        <p>
+        <a href="www.instagram.com/wiggs.de"> dev wiggers </a> |  <a href="mailto:howdy@wiggs.de"> howdy@wiggs.de </a> | <a href="https://www.are.na/dev-plant/channels"> are.na </a>
+        <p>
+    </div>
+
+  */
+
+  /* Centered text */
+  /* This centers over-text for the page grids */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+  }
+
+  /* Character Limit */
+  /* This limits the character length to 60ch as needed */
+    .limit {
+      max-width: 60ch;
+      padding-left: 25px;
+    }
+
+  /* Container Size */
+  /* This limits the size of containers to a 500px by 500px square as needed */
+  .size {
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:2%;
+  }
+/* ************************************************************************** */
+
+/* MODULES */
+/* -------------------------------------------------------------------------- */
+/* INDEX PAGE */
+
+/* Index background*/
+.bg-sp{
+    background-image: url(../images/spiral.png); /* Identifies the background image */
+    background-size: 50% auto; /* Sets the image not to repeat */
+    background-repeat: no-repeat; /* Sets the image to a fixed point system */
+    background-attachment: fixed; /* Sizes the background image */
+    background-position: center center; /* The actual position of the background */
+}
+
+.sl-container {
+  width: 1024px;   /* You can set this to whatever you wish. 1024x768 is the
+                      size of a standard web browser window */
+  height: 768px;   /* You'll need to set a height. */
+  position: relative;   /* Allows positioning relative to this container. */
+}
+
+.sl-box {
+  position: absolute; /* Allows positioning inside the container. */
+}
+
+/* Page 1 */
+.sl-box#one { /* #one is an identifer for the box */
+  top: 7%; /* The position of the "box" where the link exists, by way of top, right, bottom, or left */
+  right: 12%;
+}
+
+/* Page 2 */
+.sl-box#two {
+  top: 30%;
+  right: -15%;
+}
+
+/* Page 3*/
+.sl-box#three {
+  bottom: 25%;
+  left: 25%;
+}
+
+/* Page 4 */
+.sl-box#four {
+  top: 22%;
+  left: 49%;
+}
+
+/* Page 5 */
+.sl-box#five {
+  bottom: 20%;
+  left: 85%;
+}
+
+.sl-box#six {
+  bottom: 35%;
+  left: 75%;
+}
+
+.sl-box#seven {
+  top: -300%;
+  left: -400%;
+}
+
+.sl-box#eight {
+  top: 150%;
+  left: -300%;
+  max-width: 20ch; /* This limits the size of the box to 20 "ch" */
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* ABOUT PAGE */
+
+/* About me background*/
+.bg-ab{
+    background-image: url(../images/about.jpg); /* Identifies the background image */
+    background-repeat: no-repeat; /* Sets the image not to repeat */
+    background-attachment: fixed; /* Sets the image to a fixed point system */
+    background-size: 450px; /* Sizes the background image */
+    background-position: 80% 60%; /* The actual position of the background */
+}
+
+/* About-grid */
+.ab-container {
+  width: 1024px;   /* You can set this to whatever you wish. 1024x768 is the
+                      size of a standard web browser window */
+  height: 768px;   /* You'll need to set a height. */
+  position: relative;   /* Allows positioning relative to this container. */
+}
+
+.ab-box {
+  position: absolute;
+}
+
+/* Box 1 */
+.ab-box#one {
+  top: 5%; /* The position of the box on the page */
+  left: 11%;
+  width: 300px; /* You will need to set the width and the height to fit your
+                  text for each box */
+  height: 150px;
+  padding: 15px; /* The amount of space around the box */
+  background-color: whitesmoke; /* The boxes background color */
+  border-color: lightgray; /* The boxes border color */
+  border-style: outset; /* The boxes border style */
+  border-width: medium; /* The boxes border width */
+  border-radius: 5px; /* This rounds the border a bit */
+  text-align: left; /* This aligns the text within the box */
+  box-sizing: border-box; /* This includes the padding in the overall box size */
+}
+
+/* Box 2 */
+.ab-box#two {
+  top: 15%;
+  right: 25%;
+  width: 215px;
+  height: 275px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 3 */
+.ab-box#three {
+  bottom: 35%;
+  left: 15%;
+  width: 300px;
+  height: 275px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 4 */
+.ab-box#four {
+  bottom: 10%;
+  right: 30%;
+  width: 400px;
+  height: 175px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 5 */
+.ab-box#five {
+  bottom: 20%;
+  right: -35%;
+  width: 200px;
+  height: 225px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 6 */
+.ab-box#six {
+  top: 5%;
+  right: -35%;
+  width: 215px;
+  height: 150px;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+/* -------------------------------------------------------------------------- */
+/* WORK PAGE */
+
+/* Work grid */
+/* This section of code supports the work grids! */
+/* Create four equal columns that floats next to each other */
+.wk-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto; /* The number of "auto" (or, sizes in px)
+                                                 determines the number of columns*/
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.wk-grid > div { /* This sets up the larger container within which our photo-grids will sit */
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.wk-container { /* This controls each photo-element */
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+/* PUBLICATIONS PAGE */
+
+/* Publications grid */
+/* This section of code supports the publications grids! */
+.pb-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.pb-grid > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.pb-container {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------- */
+/* PHILOSOPHY PAGE */
+
+/* Philosophy page background*/
+.bg-ph{
+    background-image: url(../images/ssp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* About-grid */
+.ph-container {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+
+.ph-box {
+  position: absolute;
+}
+
+/* Box 1 */
+.ph-box#one {
+  top: 0%;
+  left: 0%;
+  padding: 15px;
+  max-width: 30ch;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 2 */
+.ph-box#two {
+  top: 5%;
+  left: 35%;
+  padding: 15px;
+  max-width: 25ch;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 3 */
+.ph-box#three {
+  top: 15%;
+  left: 65%;
+  max-width: 80ch;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 4 */
+.ph-box#four {
+  bottom: 25%;
+  right: 45%;
+  max-width: 30ch;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 5 */
+.ph-box#five {
+  bottom: 28%;
+  right: -32%;
+  max-width: 65ch;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Box 6 */
+.ph-box#six {
+  bottom: 7%;
+  right: -35%;
+  max-width: 45ch;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-color: lightgray;
+  border-style: outset;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------- */
+/* VISUAL SUB-PAGE */
+/* This is a generic page to be used for showing visual/audible works */
+
+/* For Multiple Images */
+.vs-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.vs-grid > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.vs-container {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
