@@ -15,7 +15,7 @@ It encourages digital stewardship.
 It opens the door for alternatives to large-scale corporate run website building
 and hosting services; instead placing control firmly back into the hands of the artist.
 
-This version of the site (001) was introduced in the spring of 2024 by Dev Wiggers.
+This version of the site (003) was introduced in the spring of 2024 by Dev Wiggers.
 
 USE INSTRUCTIONS:
 
