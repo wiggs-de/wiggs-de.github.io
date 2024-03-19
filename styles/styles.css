@@ -150,11 +150,11 @@ a:hover{
   width: 1024px;   /* You can set this to whatever you wish. 1024x768 is the
                       size of a standard web browser window */
   height: 768px;   /* You'll need to set a height. */
-  position: relative;   /* Allows positioning relative to this container. */
+  position: fixed;   /* Allows positioning relative to this container. */
 }
 
 .sl-box {
-  position: absolute; /* Allows positioning inside the container. */
+  position: fixed; /* Allows positioning inside the container. */
 }
 
 /* Page 1 */
