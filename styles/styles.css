@@ -1,7 +1,7 @@
 /* This project is built by:
  * Dev Wiggers <howdy@wiggs.de>
  * and it is version:
- * 001
+ * 003
  */
 
 /* ************************************************************************** */
@@ -14,7 +14,7 @@ body {
     background-color: #ffffff;
     font-size: 20px;
     font-style: normal;
-    font-family: Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 /* Title text */
@@ -202,6 +202,13 @@ a:hover{
   left: -300%;
   max-width: 20ch; /* This limits the size of the box to 20 "ch" */
 }
+
+.sl-box#nine {
+  top: 150%;
+  left: 300%;
+  max-width: 20ch; /* This limits the size of the box to 20 "ch" */
+}
+
 
 
 /* -------------------------------------------------------------------------- */
