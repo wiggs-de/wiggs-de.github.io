@@ -2,7 +2,7 @@
 THE STATIC SITE PROJECT
 This version of the site (v.003) was introduced:
 in the spring of 2024 by Dev Wiggers.
-howdy@wiggs.de IG: @wiggs.de aren.a: https://www.are.na/dev-plant
+howdy@wiggs.de aren.a: https://www.are.na/dev-plant
 
 --------------------------------------------------------------------------------
 ON DIGITAL SPACES
